@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ink4wrench-watermark"
+version = "0.1.0"
+description = "按结构键把条目聚类，标出模型权重的水印上的同组项与各组的代表样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ink4wrench" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://ink4wrench.github.io"
+Repository = "https://github.com/ink4wrench/watermark"
+Issues = "https://github.com/ink4wrench/watermark/issues"
+
+[project.scripts]
+watermark = "watermark:main"
+
+[tool.setuptools]
+py-modules = ["watermark"]
